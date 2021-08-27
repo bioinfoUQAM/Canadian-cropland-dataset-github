@@ -1,0 +1,73 @@
+Code,Label,Étiquette,Red\Rouge,Green\Vert,Blue\Bleu,Definition,Définition
+10,Cloud,Nuages,0,0,0,"Areas unclassified due to cloud, shadow or other image quality factors.","Surface non classifiées à cause des nuages, ombrage ou autres facteurs de quailité d’image"
+20,Water,Eau,51,51,255,"Water bodies (lakes, reservoirs, rivers, streams, salt water, etc). ","Plan d’eau (lacs, réservoirs. Rivières, cordeaux, eau salée, etc)."
+30,Exposed_Land,Sols nus/terres stériles,153,102,102,"Land that is predominately non-vegetated and non-developed. Includes: glacier, rock, sediments, burned areas, rubble, mines, other naturally occurring non-vegetated surfaces. Excludes fallow agriculture","Terre principalement  non végétalisée et non développée. Comprend : glacier, roche, sédiments, surface brûlée, décombres, mines, autres surfaces naturellement  non végétalisées."
+34,Urban,Milieu urbain/bâti,204,102,153,"Land that predominantly built-up or developed and vegetation associated with these land covers. This includes road surfaces, railway surfaces, buildings and paved surfaces, urban areas, industrial sites, mine structures, golf courses, etc.","Terre principalement  construite ou développée et la végétation est associée avec  ces couvertures. Cela Comprend : routes, chemin de fer, bâtiments et surfaces pavées, surfaces urbaines, sites industriels, structure minières etc."
+35,Greenhouse,Serres,225,225,225,Greenhouses have been visually identified from satellite imagery,Les serres ont été identifiées par interprétation visuelle  d’images satellitaires. 
+50,Shrubland,Arbustaie,255,255,0,"Predominantly woody vegetation of relatively low height (generally +/-2 meters). May include grass or wetlands with woody vegetation, regenerating forest.","Principalement des surfaces couvert des végétations ligneuses d’une hauteur relativement courte (+/-2m). peu inclure des herbes, ou des surfaces humides avec des végétations ligneuses, des régénérations forestières"
+80,Wetland,Terres humides,153,51,153,"Land with a water table near/at/above soil surface for enough time to promote wetland or aquatic processes (semi-permanent or permanent wetland vegetation, including fens, bogs, swamps, sloughs, marshes etc).","Terre avec un niveau d'eau près de / au / dessus de la surface du sol assez longtemps pour promouvoir les processus de terres humides ou aquatiques (végétation semi-permanent ou permanent des zones humides, y compris les tourbières, tourbières, marais, marécages, marais, etc.)."
+85,Peatland,Tourbière exploitée,80,27,80,Wetlands that are commercially harvested for peat.,Tourbière exploitée commercialement : Production de tourbe.
+110,Grassland,Prairies,204,204,0,"Predominantly native grasses and other herbaceous vegetation, may include some shrubland cover. ","Principalement d'herbes indigènes et autre végétation herbacée, peuvent inclure une certaine couverture arbustive. Les terres agricoles, y compris les cultures annuelles et pérennes; et exclurait les prairies. Cette classe est mappée que si la distinction de sous-couvertures agricoles (classes 132 à 199) n’est pas possible."
+120,Agriculture,Agriculture (indifférenciée),204,102,0,"Agricultural land, including annual and perennial crops; and would exclude grassland. This class is mapped only if the distinction of sub-agricultural covers (classes 132-199) is not possible.","Les terres agricoles, y compris les cultures annuelles et pérennes; et exclurait les prairies. Cette classe est mappée que si la distinction de sous-couvertures agricoles (classes 132 à 199) n’est pas possible."
+122,Pasture,Pâturage/Cultures fourragères,255,204,51,"Periodically cultivated. Includes tame grasses and other perennial crops such as alfalfa and clover grown alone or as mixtures for hay, pasture or seed. ","Terre périodiquement cultivée. Comprend : herbes cultivées et d'autres cultures pérennes telles que la luzerne et le trèfle cultivés seuls ou en mélanges pour le foin, pâturage ou semences."
+130,Too_Wet_to_be_Seeded,Trop humide pour l’ensemencement,120,153,246,Agricultural fields that are normally seeded that remain unseeded due to excess spring moisture. ,Champs agricoles qui sont normalement ensemencées qui restent non ensemencées en raison de l’excès d’humidité en printemps.
+131,Fallow,Jachère,255,153,0,Plowed and harrowed fields that are left unsown for the growing season,Champs labourés et hersées qui sont laissés non semés pour la saison de croissance
+132,Cereal,Céréales,102,0,0,This class is mapped only if the distinction of sub-cereal covers (classes 133-146) is not possible.,Cette classe est cartographiée seulement si la distinction des sous-céréales (classes 133 à 146) n’est pas possible.
+133,Barley,Orge,218,227,29,,
+134,Other_Grain,Autres céréales,153,204,0,,
+135,Millet,Millet,210,219,37,,
+136,Oat,Avoine,209,213,43,,
+137,Rye,Seigle,202,206,50,,
+138,Spelt,Épeautre,195,198,58,,
+139,Triticale,Triticale,185,188,68,,
+140,Wheat,Blé,167,179,77,This sub-cereal class is mapped only if the distinction of sub-wheat covers (classes 145-146) is not possible.,Cette classe est cartographiée seulement si la distinction des sous-blé (classes 145 à 146) n’est pas possible.
+141,Switchgrass,Panic érigé,185,198,78,,
+142,Sorghum,Sorgho,153,153,0,,
+143,Quinoa,Quinoa,233,226,177,,
+145,Winter_Wheat,Blé d'hiver,128,151,105,,
+146,Spring_Wheat,Blé de printemps,146,165,91,,
+147,Corn,Maïs,255,255,153,,
+148,Tobacco,Tabac,152,136,124,,
+149,Ginseng,Ginseng,121,155,147,,
+150,Oilseed,Oléagineux,94,162,99,This class is mapped only if the distinction of sub-oilseed covers (classes 151-158) is not possible.,Cette classe est cartographiée seulement si la distinction des sous- oléagineux (classes 151 à 158) n’est pas possible.
+151,Borage,Bourrache,82,174,119,,
+152,Camelina,Caméline,65,191,122,,
+153,Canola,Canola/Colza,214,255,112,,
+154,Flaxseed,Lin,140,140,255,,
+155,Mustard,Moutarde,214,204,0,,
+156,Safflower,Carthame,255,127,0,,
+157,Sunflower,Tournesol,49,84,145,,
+158,Soybean,Soya,204,153,51,,
+160,Pulses,Légumineuses,137,110,67,This class is mapped only if the distinction of sub-pulse covers (classes 162-174) is not possible.,Cette classe est cartographiée seulement si la distinction des sous-impulsions (classes 162 à 174) n’est pas possible.
+161,Other_Pulses,Autres Légumineuses,153,102,51,,
+162,Pea,Pois,143,108,61,,
+163,Chickpea,Pois Chiche,182,164,114,,
+167,Bean,Haricots,130,101,74,,
+168,Fababean,Féveroles,163,144,105,,
+174,Lentil,Lentilles,184,89,0,,
+175,Vegetable,Légumes,183,75,21,This class is mapped only if the distinction of sub-vegetable covers (classes 176-179) is not possible.,Cette classe est cartographiée seulement si la distinction des sous-légumes (classes 176 à 179) n’est pas possible.
+176,Tomato,Tomates,255,138,138,,
+177,Potato,Pomme de terre,255,204,204,,
+178,Sugarbeet,Betterave à sucre,111,85,202,,
+179,Other_Vegetable,Autres légumes,255,204,255,,
+180,Fruit,Fruits,220,84,36,This class is mapped only if the distinction of sub-fruit covers (classes 181-190) is not possible.,Cette classe est cartographiée seulement si la distinction des sous-fruits (classes 181 à 190) n’est pas possible.
+181,Berry,Petits fruits,208,90,48,This sub-fruit class is mapped only if the distinction of sub-berry covers (classes 182-185) is not possible.,Cette classe est cartographiée seulement si la distinction des sous-petits fruits (classes 182 à 185) n’est pas possible.
+182,Blueberry,Bleuet,210,0,0,,
+183,Cranberry,Canneberge,204,0,0,,
+185,Other_Berry,Autres baie,220,50,0,,
+188,Orchard,Vergers,255,102,102,,
+189,Other_Fruits,Autres fruits,197,69,59,,
+190,Vineyard,Vignobles,116,66,189,,
+191,Hops,Houblon,255,204,153,,
+192,Sod,Gazon en plaques,181,251,5,,
+193,Herb,Fines herbes,204,255,5,,
+194,Nursery,Pépinière,7,249,140,,
+195,Buckwheat,Sarrasin,0,255,204,,
+196,Canaryseed,Graines à canaris,204,51,204,,
+197,Hemp,Chanvre,142,118,114,,
+198,Vetch,Vesce,177,149,79,,
+199,Other_Crop,Autres cultures,116,154,102,,
+200,Forest,Forêt (indifférenciée),0,153,0,Predominantly forested or treed areas. This class is mapped only if the distinction of sub-forest covers (classes 210-230) is not possible.,Forêts ou zones majoritairement boisées. Cette classe est cartographiée seulement  si la distinction des sous-forêt (classes 210 à 230) n’est pas possible.
+210,Coniferous,Forêt de conifères,0,102,0,Predominantly coniferous forests or treed areas  ,Forêts ou zones boisées principalement de conifères
+220,Broadleaf,Forêt de feuillus,0,204,0,Predominantly broadleaf/deciduous forests or treed areas. ,Principalement feuillus / forêts de feuillus ou des zones boisées.
+230,Mixedwood,Forêt mixte,204,153,0,Forest that is a combination of both the coniferous and broadleaf classes,Forêt qui est une combinaison des deux : conifères et feuillus
