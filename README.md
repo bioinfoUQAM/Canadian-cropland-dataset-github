@@ -1,6 +1,9 @@
 # Canadian-Cropland-Dataset
 This repository houses a novel patch-based dataset compiled using optical satellite images of Canadian agricultural croplands retrieved from Sentinel-2.
 
+## Dataset
+The original dataset can be accessed through this [Google Drive](https://drive.google.com/drive/folders/1mNI8B5EMk0Xgvx2Pc9ztnQRaW9pXh8yb?usp=sharing). In the upcoming months, we will be hosting it on a website at Université du Québec à Montreal. The Drive contains the images from all years preprocessed at multiple times. A version of the dataset in train/validation/test splits is available for performing machine learning benchmarking tests. The file RGB.pdf is a glossary showing all the images available over the four year period for each of the 4,982 geographical points. 
+
 ## Description
 This repository contains code for the creation and manipulation of a novel patch-based dataset, the _Canadian Cropland Dataset_ inspired by the [Eurosat dataset](https://ieeexplore.ieee.org/document/8736785 "Eurosat article"). It is compiled using optical satellite images of Canadian agricultural croplands retrieved from Sentinel-2. A total of 58,973 high-resolution (10m) geo-referenced images of 46 crop types over 5 months and 4 years were extracted using the Google Earth Engine tool [Google Earth Engine](https://earthengine.google.com/  "GEE") and were automatically labelled with the [Canadian Crop Inventory](https://www.agr.gc.ca/atlas/aci "Canadian Crop Inventory"). Each image contain 13 main spectral bands as well as a selection of bands corresponding to vegetation indices (GNDVI, NDVI, NDVI45, OSAVI and PSRI). 
 
@@ -34,7 +37,7 @@ You can install these required libraries using the `conda install -c conda-forge
 Figure 2: Map representing an overview of the selected geographical locations used in the _Canadian Cropland Dataset_. Markers are randomly chosen fields and are color-coded by the 2019 crop types.
 
 ### Data Collection
-Contains multiple python scripts for downloading the Sentinel-2 images for each point in the sample .csv file. It also contains some data visualization code. The original dataset can be accessed through this [Google Drive](https://drive.google.com/drive/folders/1mNI8B5EMk0Xgvx2Pc9ztnQRaW9pXh8yb?usp=sharing). In the upcoming months, we will be hosting it on a website at Université du Québec à Montreal. The Drive contains the images from all years preprocessed at multiple times. A version of the dataset in train/validation/test splits is available for performing machine learning benchmarking tests. The file RGB.pdf is a glossary showing all the images available over the four year period for each of the 4,982 geographical points. Please contact authors for more inquiry if needed. 
+Contains multiple python scripts for downloading the Sentinel-2 images for each point in the sample .csv file. It also contains some data visualization code. 
 
 ### Data Cleaning
 Contains functions for manipulating images and moving files around to create label specific directories and training/validation/test sets. We use a JavaScript application for removing cloudy/noisy images from the collection (NOT CONTAINED IN THIS REPOSITORY). 
@@ -61,5 +64,5 @@ If you have used this dataset, please cite the following presentation:
 
 
 ## Contact
-For any questions or concerns regarding this repository, please contact boatswain_jacques.amanda@courrier.uqam.ca
+For any questions or concerns regarding this repository, please contact boatswain_jacques.amanda@courrier.uqam.ca. 
 
