@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-#  # AAFC Canadian Cropland Classification Using Deep Learning : Long-Term Recurrent Convolutional Network (LRCN)
+#  # Canadian Cropland Classification Using Deep Learning : Long-Term Recurrent Convolutional Network (LRCN)
 
 
 # Reference: *Long-term recurrent convolutional networks for visual recognition and description.*
@@ -28,9 +28,9 @@ import os, random
 
 
 # define the train, validation and test directories and get the image paths 
-train_directory = "../../AAFC-dataset/2019/RGB/training"
-val_directory = "../../AAFC-dataset/2019/RGB/validation"
-test_directory = "../../AAFC-dataset/2019/RGB/test"
+train_directory = "2019/RGB/training"
+val_directory = "2019/RGB/validation"
+test_directory = "2019/RGB/test"
 
 train_imagePaths = utils.get_all_file_paths(train_directory)
 val_imagePaths = utils.get_all_file_paths(val_directory)
@@ -118,7 +118,7 @@ print("Subset name: ", img_subset)
 print("Year: ", year)
 
 # save the model 
-filename = "LRCN-AAFC-" + img_subset + "-" + year + "-" + str(dateTimeObj)
+filename = "LRCN-" + img_subset + "-" + year + "-" + str(dateTimeObj)
 
 LCRN_tensor = TensorBoard(log_dir='logs', histogram_freq=1, embeddings_freq=1, )
 csv_logger = CSVLogger("logs/" + filename + "_log.csv", append=True, separator=';')
