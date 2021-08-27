@@ -1,4 +1,4 @@
-# Usage python split_datasets.py -indir ../AAFC-dataset -outdirs GNDVI NDVI -year 2016
+# Usage python split_datasets.py -indir ../dataset -outdirs GNDVI NDVI -year 2016
 
 """
 Created on Mon Aug  9 12:54:41 2021
