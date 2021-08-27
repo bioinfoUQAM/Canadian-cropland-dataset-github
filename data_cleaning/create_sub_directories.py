@@ -2,7 +2,7 @@
 """
 Created on Sat May  1 11:41:33 2021
 
-@author: amand
+@author: amanda
 """
 
 import os 
