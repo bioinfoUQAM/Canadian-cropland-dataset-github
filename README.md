@@ -6,7 +6,7 @@ This repository contains code for the creation of a novel patch-based dataset, t
 
 ![dataset overview](https://github.com/bioinfoUQAM/AAFC-cropland-dataset/blob/main/figures/crop_type_mosaic.png)
 
-Figure 1: Map representing an overview of the selected geographical locations used in the _Canadian Cropland Dataset_. Markers are randomly chosen fields and are color-coded by the 2019 crop types
+Figure 1: An example overview of sample patches of all ten classes in the proposed dataset. The images measure 64 x 64 pixels. The 2019 version of the dataset has a total of 17,315 geo-referenced images. 
 
 ### Python version
 * [python 3.8.8](https://www.python.org/downloads/release/python-388/)
@@ -29,6 +29,9 @@ You can install these required libraries using the `conda install -c conda-forge
 
 ### Earth Engine
  Contains the [JavaScript code](https://github.com/AmandaBoatswain/AAFC-cropland-database/blob/main/EarthEngine/AAFC_GEE_points.js "JavaScript code") used to collect points of agricultural fields all accross Canada from the months of June 2016 to October 2019. The code can be visualized directly in GEE using this [link](https://code.earthengine.google.com/?scriptPath=users%2Famandaboatswainj%2FAAFC-cropland-database%3AAAFC_GEE_dataset_points "link" ). Note that you must be registered with an activated GEE account to view the script and run it on the cloud.
+ 
+![geographical points](https://github.com/bioinfoUQAM/Canadian-cropland-dataset/blob/main/figures/ACI_crop_inventory_2019.png)
+Figure 2: Map representing an overview of the selected geographical locations used in the _Canadian Cropland Dataset_. Markers are randomly chosen fields and are color-coded by the 2019 crop types
 
 ### Data Collection
 Contains multiple python scripts for downloading the Sentinel-2 images for each point in the sample .csv file. It also contains some data visualization code. The original dataset can be accessed through this [Google Drive](https://drive.google.com/drive/folders/1mNI8B5EMk0Xgvx2Pc9ztnQRaW9pXh8yb?usp=sharing). In the upcoming months, we will be hosting it on a website at Université du Quénec à Montreal. The Drive contains the images from all years preprocessed at multiple times. A version of the dataset in train/validation/test splits is available for performing machine learning benchmarking tests. The pdf file RGB.pdf is a glossary showing all the images available over the four year period for each of the 4,982 geographical points. Please contact authors for more inquiry if needed. 
