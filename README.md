@@ -48,7 +48,7 @@ The dataset was then manually curated by removing:
 
 
 ### Machine Learning
-Contains python code for the deep learning benchmark models (CNN, ResNet-50 and LRCN), as well as the saved models and tensorflow logs. 
+Contains python code for the deep learning benchmark models (CNN, ResNet-50 and LRCN).
 
 ### Dataset Statistics
 Contains spreadsheets and figures depicting the distribution of the images within the dataset. 
