@@ -53,6 +53,13 @@ Contains python code for the deep learning benchmark models (CNN, ResNet-50 and 
 ### Dataset Statistics
 Contains spreadsheets and figures depicting the distribution of the images within the dataset. 
 
+### References
+If you have used this dataset, please cite the following presentation:
+
+[1] Towards the Creation of a Canadian Land-Use Dataset for Agricultural Land Classification. Amanda A. Boatswain Jacques, Abdoulaye Baniré Diallo, Etienne Lord.  42nd Canadian Symposium on Remote Sensing: Understanding Our World: Remote Sensing for a Sustainable Future, June 2021. Virtual. 
+
+
+
 ## Contact
 For any questions or concerns regarding this repository, please contact amanda.boatswainj@gmail.com
 
