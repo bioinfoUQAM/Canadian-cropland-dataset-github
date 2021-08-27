@@ -2,7 +2,7 @@
 """
 Modified on Aug 11 2021
 
-A set of helper functions for manipulating data for the AAFC cropland dataset
+A set of helper functions for manipulating data for the Canadian cropland dataset
 @author: Amanda A. Boatswain Jacques
 """
 
