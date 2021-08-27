@@ -1,11 +1,40 @@
 # import some additional librairies
+import argparse
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import plot_confusion_matrix
 from sklearn.metrics import classification_report
+import AAFC_utils as utils 
+from tensorflow import keras
+
+
+# create the argument parser and parse the args
+parser = argparse.ArgumentParser(description='Evaluate the model on the test set.')
+parser.add_argument('-path', required=True, type=str, help='Path to the saved model.')
+parser.add_argument('-testpath', required=True, type=str, help='Path to the test directory.')
+
+args = parser.parse_args()
+
+
+model = keras.models.load_model(args.path)
 
 # Write some code here to load the model from memory
 
-# model = load_model()
+
+test_directory = args.testpath
+test_imagePaths = utils.get_all_file_paths(test_directory)
+
+# get the unique labels from the image paths 
+labels = utils.create_labels_set(test_directory, test_imagePaths)
+print("Crop classes: ", labels)
+print(" ")
+
+# set the model parameters
+# transform the text labels into numerical values 
+lb = utils.create_binarizer(labels) 
+batch_size = 32
+input_shape = (65, 65, 3) # image shape 
+n_classes = len(labels)
+seq_len = 3
 
 # make predictions on the testing images, finding the index of the
 # label with the corresponding largest predicted probability
@@ -62,5 +91,3 @@ print(classification_report(test_labels[:-difference], predIdxs,
 print(" ")
 print("Confusion Matrix") 
 print(confusion_matrix(test_labels[:-difference], predIdxs))
-
-
