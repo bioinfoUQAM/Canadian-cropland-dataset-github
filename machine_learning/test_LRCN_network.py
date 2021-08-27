@@ -3,7 +3,7 @@ import argparse
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import plot_confusion_matrix
 from sklearn.metrics import classification_report
-import AAFC_utils as utils 
+import utils as utils 
 from tensorflow import keras
 
 
