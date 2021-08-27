@@ -39,6 +39,14 @@ Contains multiple python scripts for downloading the Sentinel-2 images for each 
 ### Data Cleaning
 Contains functions for manipulating images and moving files around to create label specific directories and training/validation/test sets. It also contains a JavaScript application for removing cloudy/noisy images from the collection. 
 
+![rapid_tags](https://github.com/bioinfoUQAM/Canadian-cropland-dataset/blob/main/figures/rapid_tags.png)
+
+The dataset was then manually curated by removing: 
+- Cloudy images
+- Noisy images
+- Images with missing pixels
+
+
 ### Machine Learning
 Contains python code for the deep learning benchmark models (CNN, ResNet-50 and LRCN), as well as the saved models and tensorflow logs. 
 
