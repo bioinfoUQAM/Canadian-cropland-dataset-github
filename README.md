@@ -37,7 +37,7 @@ Figure 2: Map representing an overview of the selected geographical locations us
 Contains multiple python scripts for downloading the Sentinel-2 images for each point in the sample .csv file. It also contains some data visualization code. The original dataset can be accessed through this [Google Drive](https://drive.google.com/drive/folders/1mNI8B5EMk0Xgvx2Pc9ztnQRaW9pXh8yb?usp=sharing). In the upcoming months, we will be hosting it on a website at Université du Québec à Montreal. The Drive contains the images from all years preprocessed at multiple times. A version of the dataset in train/validation/test splits is available for performing machine learning benchmarking tests. The file RGB.pdf is a glossary showing all the images available over the four year period for each of the 4,982 geographical points. Please contact authors for more inquiry if needed. 
 
 ### Data Cleaning
-Contains functions for manipulating images and moving files around to create label specific directories and training/validation/test sets. It also contains a JavaScript application for removing cloudy/noisy images from the collection. 
+Contains functions for manipulating images and moving files around to create label specific directories and training/validation/test sets. We use a JavaScript application for removing cloudy/noisy images from the collection (NOT CONTAINED IN THIS REPOSITORY). 
 
 ![rapid_tags](https://github.com/bioinfoUQAM/Canadian-cropland-dataset/blob/main/figures/rapid_tags.png)
 
