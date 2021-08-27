@@ -104,7 +104,7 @@ model.add(Reshape((seq_len, out_shape[2] * out_shape[3] * out_shape[4])))
 model.add(LSTM(64, return_sequences=False))
 model.add(Dropout(0.5))
 model.add(Dense(n_classes, activation='softmax'))
-model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
+model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
 
 # model structure summary
 print(model.summary())
