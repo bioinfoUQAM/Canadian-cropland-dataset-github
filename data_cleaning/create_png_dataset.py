@@ -10,7 +10,7 @@ Created on Fri Apr 30 22:41:09 2021
 import os
 import image_to_png
 
-directory = "C:/Users/Amanda/Downloads/AAFC-cropland-dataset-main/AAFC_dataset/AAFC_dataset_zip"
+directory = "dataset_zip"
 
 #file_extensions = ["OSAVI", "NDVI", "GNDVI", "PSRI", "NDVI45"]
 extension = "OSAVI"
