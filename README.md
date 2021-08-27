@@ -41,7 +41,7 @@ Contains functions for manipulating images and moving files around to create lab
 
 ![rapid_tags](https://github.com/bioinfoUQAM/Canadian-cropland-dataset/blob/main/figures/rapid_tags.png)
 
-The dataset was then manually curated by removing: 
+The dataset is manually curated by removing: 
 - Cloudy images
 - Noisy images
 - Images with missing pixels
