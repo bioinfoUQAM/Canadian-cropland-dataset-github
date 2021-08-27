@@ -61,5 +61,5 @@ If you have used this dataset, please cite the following presentation:
 
 
 ## Contact
-For any questions or concerns regarding this repository, please contact amanda.boatswainj@gmail.com
+For any questions or concerns regarding this repository, please contact boatswain_jacques.amanda@courrier.uqam.ca
 
