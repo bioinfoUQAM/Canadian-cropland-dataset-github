@@ -102,28 +102,8 @@ class EarthEngineDownloader:
             # add a short delay before download another file 
             time.sleep(2)
 
-
-
-""" HELPER FUNCTIONS """
-
-""" NOT FULLY FUNCTIONAL YET
-def extract_ACI_id(year, point):
-    ACI = ee.ImageCollection("AAFC/ACI")
-    point = ee.Geometry.Point(point)
-    ACI_img = ACI.select("landcover").filter(ee.Filter.date(year_interval[0], year_interval[1])).first()
-    crop_id = ACI_img.reduceRegion(ee.Reducer.first(), point, 10, bestEffort = True).get("landcover").getInfo()
-    #print("Crop Inventory ID: ", crop_id)
-
-    try:
-        crop_type = ACI_dict[crop_id].upper()
-
-    except KeyError as e:
-        # If there is no ID associated with that pixel, return "Unknown"
-        crop_type = "Unknown".upper()
-        crop_id = "None"
-
-    return crop_id, crop_type
-"""
+            
+   
 
 # Create a rectangle region using EPSG:3978, radius in meters, point is Lng, Lat
 def make_rectangle(point, xRadius=320, yRadius=320):
