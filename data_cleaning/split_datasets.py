@@ -3,7 +3,7 @@
 """
 Created on Mon Aug  9 12:54:41 2021
 
-@author: Amanda A. Boatswain Jacques
+@author: Etienne Lord,  Amanda A. Boatswain Jacques
 """
 
 import argparse
