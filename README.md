@@ -18,18 +18,18 @@ Figure 1: An overview of sample patches of some of the crop classes in the propo
 You can install these required libraries using the `conda install -c conda-forge --library_name` command:
 
 ```
-* earthengine-api
-* keras-gpu  
-* imutils
-* scikit-learn
-* scikit-image
-* numpy
-* opencv
-* pandas
-* pillow
-* jupyterlab
-* matplotlib
-* rasterio
+conda install -c conda-forge earthengine-api
+conda install -c conda-forge keras-gpu  
+conda install -c conda-forge imutils
+conda install -c conda-forge scikit-learn
+conda install -c conda-forge scikit-image
+conda install -c conda-forge numpy
+conda install -c conda-forge opencv
+conda install -c conda-forge pandas
+conda install -c conda-forge pillow
+conda install -c conda-forge jupyterlab
+conda install -c conda-forge matplotlib
+conda install -c conda-forge rasterio
 ```
 
 ### Earth Engine
