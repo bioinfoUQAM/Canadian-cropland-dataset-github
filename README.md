@@ -17,6 +17,7 @@ Figure 1: An overview of sample patches of some of the crop classes in the propo
 ### Other libraries
 You can install these required libraries using the `conda install -c conda-forge --library_name` command:
 
+```
 * earthengine-api
 * keras-gpu  
 * imutils
@@ -29,6 +30,7 @@ You can install these required libraries using the `conda install -c conda-forge
 * jupyterlab
 * matplotlib
 * rasterio
+```
 
 ### Earth Engine
 Contains the [JavaScript code](https://github.com/bioinfoUQAM/Canadian-cropland-dataset/blob/main/EarthEngine/AAFC_GEE_points.js "JavaScript code") used to collect points of agricultural fields all accross Canada from the months of June 2016 to October 2019. The code can be visualized directly in GEE using this [link](https://code.earthengine.google.com/?scriptPath=users%2Famandaboatswainj%2FAAFC-cropland-database%3AAAFC_GEE_dataset_points "link"). Note that you must be registered with an activated GEE account to view the script and run it on the cloud.
