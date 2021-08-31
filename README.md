@@ -39,7 +39,8 @@ conda install -c conda-forge rasterio
 Contains functions for manipulating images and moving files around to create label specific directories and training/validation/test sets. We use a JavaScript application for removing cloudy/noisy images from the collection (NOT CONTAINED IN THIS REPOSITORY). 
 
 ![rapid_tags](https://github.com/bioinfoUQAM/Canadian-cropland-dataset/blob/main/figures/rapid_tags.png)
-Figure 3: A screenshot of the data cleaning software developed in Java. The dataset is manually curated by manually removing cloudy images, noisy images and images with missing pixels
+
+Figure 2: A screenshot of the data cleaning software developed in Java. The dataset is manually curated by manually removing cloudy images, noisy images and images with missing pixels
 
 ### Data Collection
 Contains multiple python scripts for downloading the Sentinel-2 images for each point in the sample .csv file. It also contains some data visualization code. 
@@ -51,6 +52,7 @@ Contains spreadsheets and figures depicting the distribution of the images withi
 Contains the [JavaScript code](https://github.com/bioinfoUQAM/Canadian-cropland-dataset/blob/main/EarthEngine/AAFC_GEE_points.js "JavaScript code") used to collect points of agricultural fields all accross Canada from the months of June 2016 to October 2019 (Figure 2). The code can be visualized directly in GEE using this [link](https://code.earthengine.google.com/?scriptPath=users%2Famandaboatswainj%2FAAFC-cropland-database%3AAAFC_GEE_dataset_points "link"). Note that you must be registered with an activated GEE account to view the script and run it on the cloud.
  
 ![geographical points](https://github.com/bioinfoUQAM/Canadian-cropland-dataset/blob/main/figures/ACI_crop_inventory_2019.png)
+
 Figure 3: Map representing an overview of the selected geographical locations used in the _Canadian Cropland Dataset_. Markers are randomly chosen fields and are color-coded by the 2019 crop types.
 
 ### Machine Learning
