@@ -33,7 +33,7 @@ conda install -c conda-forge matplotlib
 conda install -c conda-forge rasterio
 ```
 
-## Description of Repository
+## 3 - Description of Repository
 
 ### Data Cleaning
 Contains functions for manipulating images and moving files around to create label specific directories and training/validation/test sets. We use a JavaScript application for removing cloudy/noisy images from the collection (NOT CONTAINED IN THIS REPOSITORY). 
@@ -60,12 +60,12 @@ Figure 2: Map representing an overview of the selected geographical locations us
 ### Machine Learning
 Contains python code for the deep learning benchmark models (CNN, ResNet-50 and LRCN).
 
-### References
+## 4 - References
 If you have used this dataset, please cite the following presentation:
 
 [1] Towards the Creation of a Canadian Land-Use Dataset for Agricultural Land Classification. Amanda A. Boatswain Jacques, Abdoulaye Baniré Diallo, Etienne Lord.  42nd Canadian Symposium on Remote Sensing: Understanding Our World: Remote Sensing for a Sustainable Future, June 2021. Virtual. 
 
 
-## Contact
+## 5- Contact
 For any questions or concerns regarding this repository, please contact boatswain_jacques.amanda@courrier.uqam.ca. 
 
