@@ -11,7 +11,7 @@ import shutil
 import os
 from pathlib import Path
 import pickle
-import AAFC_utils as utils
+import utils as utils
 
 # create the argument parser and parse the args
 parser = argparse.ArgumentParser(description='Split the passed dataset into a \
