@@ -13,7 +13,7 @@ Created on Mon Aug  9 12:54:41 2021
 import argparse
 import numpy as np
 import os
-import AAFC_utils as utils
+import utils as utils
 import pickle
 
 # create the argument parser and parse the args 
