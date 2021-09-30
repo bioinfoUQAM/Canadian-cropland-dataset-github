@@ -36,7 +36,7 @@ conda install -c conda-forge rasterio
 ## 3 - Description of Repository
 
 ### Data Cleaning
-Contains functions for manipulating images and moving files around to create label specific directories and training/validation/test sets. We use a JavaScript application for removing cloudy/noisy images from the collection (NOT CONTAINED IN THIS REPOSITORY). 
+Contains functions for manipulating images and moving files around to create label specific directories and training/validation/test sets. We use a Java application for removing cloudy/noisy images from the collection (NOT CONTAINED IN THIS REPOSITORY). 
 
 ![rapid_tags](https://github.com/bioinfoUQAM/Canadian-cropland-dataset/blob/main/figures/rapid_tags.png)
 
