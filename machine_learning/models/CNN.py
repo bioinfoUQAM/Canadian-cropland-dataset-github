@@ -23,10 +23,10 @@ import os
 # In practice, CNNs give us two key benefits: local invariance and compositionality.
 
 # #### Load the dataset
-# define the train, validation and test directories and get the image paths 
-train_data_dir = "../../AAFC-dataset/2019/RGB/training"
-validation_data_dir = "../../AAFC-dataset/2019/RGB/validation"
-test_data_dir = "../../AAFC-dataset/2019/RGB/test"
+# define the train, validation and test directories and get the image paths
+train_data_dir = "2019/RGB/training"
+validation_data_dir = "2019/RGB/validation"
+test_data_dir = "2019/RGB/test"
 
 # create a helper function to count the number of files in each directory
 def number_of_files(dirname):
