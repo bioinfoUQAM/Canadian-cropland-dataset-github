@@ -3,7 +3,8 @@
 
 # # AAFC Cropland Classification Using Deep Learning
 
-# Here, we will design an image classification pipeline for the AAFC cropland dataset. The dataset contains 6646 satellite images retrieved from Sentinel-2A using the Google Earth Engine tool. The dataset contains image patches of four types of cropland (barley, corn, pasture and mixed wood) from 5 different time periods in the year 2019 (june, july, august, september, october).
+# Here, we will design an image classification pipeline for the AAFC cropland dataset. The dataset contains 6646 satellite images retrieved from
+# Sentinel-2A using the Google Earth Engine tool. The dataset contains image patches of four types of cropland (barley, corn, pasture and mixed wood) from 5 different time periods in the year 2019 (june, july, august, september, october).
 
 from datetime import datetime
 from keras import layers
@@ -175,7 +176,6 @@ plot_model(CNN_model,
     expand_nested=False,
     dpi=96,
 )
-
 
 
 from sklearn.metrics import classification_report
