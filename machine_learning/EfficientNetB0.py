@@ -9,6 +9,7 @@
 ###############################################################################
 # Variables                                                                   #
 ###############################################################################
+
 import os
 dataset="RGB"  #Name the dataset here 
 dataset_zip=dataset+".zip"
@@ -33,17 +34,13 @@ def number_of_files(dirname):
 ################################################################################ 
 # DÉFINITION DES DONNÉES D'ENTRÉE                                              #
 ################################################################################
+
 train_data_dir = dataset+'/training'
 validation_data_dir = dataset+'/validation'
 test_data_dir = dataset+'/test'
 nb_train_samples=number_of_files(train_data_dir)
 nb_validation_samples=number_of_files(validation_data_dir)
 nb_test_samples=number_of_files(test_data_dir)
-
-
-
-#/content/drive/'My Drive'/
-#!unzip EuroSatRGB_very_small.zip
 
 # ==============================================================================
 # Etienne Lord, Amanda Boatswain Jacques - 2021
@@ -60,6 +57,7 @@ nb_test_samples=number_of_files(test_data_dir)
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
+
 from tensorflow.keras.applications import EfficientNetB0
 from tensorflow.keras.preprocessing import image
 #from tensorflow.keras.applications import preprocess_input, decode_predictions
@@ -113,7 +111,6 @@ model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.001), loss='cat
 # Note, we could use data augmentation
 train_datagen = ImageDataGenerator(rotation_range=90)
 test_datagen = ImageDataGenerator() 
-
 
 train_generator = train_datagen.flow_from_directory(
     train_data_dir,
@@ -195,8 +192,6 @@ original_hist2=model.fit(
 ################################################################################
 model.save(final_model)
 
-
-
 from tensorflow.keras.applications import EfficientNetB0
 from tensorflow.keras.preprocessing import image
 #from tensorflow.keras.applications import preprocess_input, decode_predictions
@@ -266,29 +261,13 @@ def plot_confusion_matrix(cm, classes,
 ################################################################################ 
 # DÉFINITION DES DONNÉES D'ENTRÉE                                              #
 ################################################################################
-#test_data_dir="EuroSatRGBmini"
+
 nb_test_samples=number_of_files(test_data_dir)
 
 ################################################################################ 
 # DÉFINITION DU MODEL                                                          #
 ################################################################################
 
-#base_model = ResNet50(weights='imagenet', include_top=False)
-
-#x = base_model.output
-#x = GlobalAveragePooling2D()(x)
-# let's add a fully-connected layer
-#x = Dense(1024, activation='relu')(x)
-#x = Dropout(0.25)(x)
-# and a logistic layer -- let's say we have 200 classes
-#predictions = Dense(number_of_classes, activation='softmax')(x)
-
-# this is the model we will train
-#model = Model(inputs=base_model.input, outputs=predictions)
-#model.compile(optimizer=RMSprop(lr=0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
-#model=load_model(final_model)
-
-#model=load_model("resnet50__ndvi_weights.09-0.93.hdf5")
 model=load_model(final_model)
 
 # predict_class
@@ -332,6 +311,7 @@ print("Report for test set")
 
 #For the EuroSat network only
 #target_names=['AnnualCrop','Forest','HerbaceousVegetation','Highway','Industrial','Pasture','PermanentCrop','Residential','River','SeaLake']
+
 print(classification_report(test_generator.classes, predicted_class_indices, target_names=target_names))
 #cm=confusion_matrix(test_generator.class_indices, y_pred)
 #print(classification_report(test_generator.class_indices, predicted_class_indices, target_names=labels))
