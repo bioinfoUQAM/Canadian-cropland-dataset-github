@@ -115,11 +115,11 @@ print("Year: ", year)
 # save the model
 filename = "3DCNN-" + img_subset + "-" + year + "-" + str(dateTimeObj)
 
-#CNN3D_tensor = TensorBoard(log_dir='logs', histogram_freq=1, embeddings_freq=1, )
+CNN3D_tensor = TensorBoard(log_dir='logs', histogram_freq=1, embeddings_freq=1, )
 csv_logger = CSVLogger(filename + "_log.csv", append=True, separator=';')
 early_stopping = EarlyStopping(monitor="accuracy", patience = 5)
 LR_reducer = ReduceLROnPlateau(monitor = "val_loss", factor = 0.1, patience = 10)
-#model_checkpoint = ModelCheckpoint(filepath=filename+".h5", monitor="val_loss", save_best_only=True)
+model_checkpoint = ModelCheckpoint(filepath=filename+".h5", monitor="val_loss", save_best_only=True)
 
 
 # fit the model to the training data
@@ -128,7 +128,7 @@ CNN3D_model = model.fit(
     steps_per_epoch=train_count//batch_size,
     validation_data = val_gen,
     verbose = 1,
-    callbacks = [csv_logger, early_stopping, LR_reducer],
+    callbacks = [csv_logger, early_stopping, LR_reducer, model_checkpoint],
     validation_steps=val_count//batch_size,
     epochs=epochs)
 
