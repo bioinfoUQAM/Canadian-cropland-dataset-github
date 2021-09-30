@@ -56,7 +56,7 @@ Contains the [JavaScript code](https://github.com/bioinfoUQAM/Canadian-cropland-
 Figure 3: Map representing an overview of the selected geographical locations used in the _Canadian Cropland Dataset_. Markers are randomly chosen fields and are color-coded by the 2019 crop types.
 
 ### Machine Learning
-Contains python code for the deep learning benchmark models (CNN, ResNet-50 and LRCN).
+Contains python code for the deep learning benchmark models (ResNet-50, LRCN, 3D-CNN, etc).
 
 ## 4 - References
 If you have used this dataset, please cite the following presentation:
