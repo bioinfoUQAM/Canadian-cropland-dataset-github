@@ -22,29 +22,10 @@ import os
 # In practice, CNNs give us two key benefits: local invariance and compositionality.
 
 # #### Load the dataset
-
-#
-# # we will be working with the RGB image directory
-# we will be working with the RGB image directory
-train_data_dir = '../AAFC_dataset/ALL_classes/filtered/RGB/training'
-validation_data_dir = '../AAFC_dataset/ALL_classes/filtered/RGB/validation'
-test_data_dir = '../AAFC_dataset/ALL_classes/filtered/RGB/test'# we will be working with the GNDVI image directory
-train_data_dir = '../AAFC_dataset/ALL_classes/filtered/GNDVI/training'
-validation_data_dir = '../AAFC_dataset/ALL_classes/filtered/GNDVI/validation'
-test_data_dir = '../AAFC_dataset/ALL_classes/filtered/GNDVI/test'# we will be working with the NDVI image directory
-train_data_dir = '../AAFC_dataset/ALL_classes/filtered/NDVI/training'
-validation_data_dir = '../AAFC_dataset/ALL_classes/filtered/NDVI/validation'
-test_data_dir = '../AAFC_dataset/ALL_classes/filtered/NDVI/test'# we will be working with the NDVI45 image directory
-train_data_dir = '../AAFC_dataset/ALL_classes/filtered/NDVI45/training'
-validation_data_dir = '../AAFC_dataset/ALL_classes/filtered/NDVI45/validation'
-test_data_dir = '../AAFC_dataset/ALL_classes/filtered/NDVI45/test'
-
-
-# we will be working with the PSRI image directory
-train_data_dir = '../AAFC_dataset/ALL_classes/filtered/PSRI/training'
-validation_data_dir = '../AAFC_dataset/ALL_classes/filtered/PSRI/validation'
-test_data_dir = '../AAFC_dataset/ALL_classes/filtered/PSRI/test'
-
+# define the train, validation and test directories and get the image paths 
+train_data_dir = "../../AAFC-dataset/2019/RGB/training"
+validation_data_dir = "../../AAFC-dataset/2019/RGB/validation"
+test_data_dir = "../../AAFC-dataset/2019/RGB/test"
 
 # create a helper function to count the number of files in each directory
 def number_of_files(dirname):
