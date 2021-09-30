@@ -10,7 +10,7 @@
 # Variables                                                                   #
 ###############################################################################
 import os
-dataset="NDVI"  #Name the dataset here 
+dataset="RGB"  #Name the dataset here 
 dataset_zip=dataset+".zip"
 past_model="efficientNetB0_"+dataset+"_*.hdf5"
 final_model="efficientNetB0_"+dataset+"_final.h5"
