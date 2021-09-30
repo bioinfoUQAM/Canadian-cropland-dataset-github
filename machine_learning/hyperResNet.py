@@ -10,6 +10,7 @@
 ###############################################################################
 # Variables                                                                   #
 ###############################################################################
+
 import os
 dataset="RGB"  #Name the dataset here 
 dataset_zip=dataset+".zip"
@@ -19,8 +20,6 @@ final_model="CNN_"+dataset+"_final.h5"
 number_of_classes=10 
 img_width, img_height = 64, 64
 batch_size = 128
-###############################################################################
-
 
 ###############################################################################
 # HELPER FUNCTIONS
@@ -32,15 +31,13 @@ def number_of_files(dirname):
 ################################################################################ 
 # DÉFINITION DES DONNÉES D'ENTRÉE                                              #
 ################################################################################
+
 train_data_dir = dataset+'/training'
 validation_data_dir = dataset+'/validation'
 test_data_dir = dataset+'/test'
 nb_train_samples=number_of_files(train_data_dir)
 nb_validation_samples=number_of_files(validation_data_dir)
 nb_test_samples=number_of_files(test_data_dir)
-
-#/content/drive/'My Drive'/
-#!unzip EuroSatRGB_very_small.zip
 
 # ==============================================================================
 # Etienne Lord, Amanda Boatswain Jacques - 2021
@@ -57,7 +54,7 @@ nb_test_samples=number_of_files(test_data_dir)
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-# %tensorflow_version 1.x
+
 from tensorflow.keras.applications.resnet50 import ResNet50
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.resnet50 import preprocess_input, decode_predictions
@@ -88,7 +85,6 @@ if K.image_data_format() == 'channels_first':
 else:
     input_shape = (img_width, img_height, 3)
 
-
 ################################################################################ 
 # IMAGES LOADING                                                               #
 ################################################################################
@@ -96,7 +92,6 @@ else:
 # Note, we could use data augmentation
 train_datagen = ImageDataGenerator(rotation_range=90)
 test_datagen = ImageDataGenerator() 
-
 
 train_generator = train_datagen.flow_from_directory(
     train_data_dir,
@@ -118,7 +113,6 @@ test_generator = test_datagen.flow_from_directory(
     batch_size=batch_size,
     class_mode='categorical')
 
-
 ################################################################################ 
 # MODEL                                                                   #
 ################################################################################
@@ -128,8 +122,6 @@ hypermodel = HyperResNet(input_shape=input_shape, classes=number_of_classes)
 ################################################################################ 
 # RUN MODEL                                                                   #
 ################################################################################
-
-
 
 tuner = RandomSearch(
     hypermodel,
@@ -146,43 +138,10 @@ tuner.search(train_generator, steps_per_epoch=(nb_train_samples // batch_size),e
 tuner.results_summary()
 
 model=tuner.get_best_models(num_models=1)
-#models[0].save(final_model)
-
-#model.save("resnet50_"+dataset+"rgb_first.h5")
-# At this point, the top layers are well trained and we can start fine-tuning
-# convolutional layers. We will freeze the bottom N layers
-# and train the remaining top layers.
-
-################################################################################ 
-# RUN MODEL (Part 2)                                                           #
-################################################################################
-
-#for layer in model.layers:
-#   layer.trainable = True
-
-#model.compile(optimizer=RMSprop(lr=0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
-#model.summary()
-
-#csv_logger = CSVLogger("resnet50_"+dataset+"rgb_last_log.csv", append=True, separator=';')
-#checkpointer = ModelCheckpoint(filepath="resnet50_"+dataset+"_weights.{epoch:02d}-{val_accuracy:.2f}.h5", verbose=1, save_best_only=False)
-#original_hist2=model.fit(
-#    train_generator,
-#    steps_per_epoch=nb_train_samples // batch_size,
-#    epochs=epochs_last,
-#    verbose=1,
-#    callbacks=[csv_logger],
-#    validation_data=validation_generator,
-#    validation_steps= (nb_validation_samples // batch_size))
-
-#model.save("resnet50_"+dataset+"_end.h5")
-#callbacks=[csv_logger,checkpointer],
 
 ################################################################################ 
 # SAVE MODEL                                                                   #
 ################################################################################
-#model.save(final_model)
-
-
 #%tensorflow_version 1.x
 from tensorflow.keras.applications.resnet50 import ResNet50
 from tensorflow.keras.preprocessing import image
@@ -207,6 +166,7 @@ import pandas as pd
 # dimensions des images d'entraînement
 img_width, img_height = 64, 64
 batch_size = 128
+
 ################################################################################
 # HELPER FUNCTIONS                                                             #
 ################################################################################ 
@@ -214,7 +174,6 @@ batch_size = 128
 def number_of_files(dirname):
 	cpt = sum([len(files) for r, d, files in os.walk(dirname)])
 	return cpt
-
 
 ################################################################################ 
 # DÉFINITION DES DONNÉES D'ENTRÉE                                              #
@@ -225,24 +184,6 @@ nb_test_samples=number_of_files(test_data_dir)
 ################################################################################ 
 # DÉFINITION DU MODEL                                                          #
 ################################################################################
-
-#base_model = ResNet50(weights='imagenet', include_top=False)
-
-#x = base_model.output
-#x = GlobalAveragePooling2D()(x)
-# let's add a fully-connected layer
-#x = Dense(1024, activation='relu')(x)
-#x = Dropout(0.25)(x)
-# and a logistic layer -- let's say we have 200 classes
-#predictions = Dense(number_of_classes, activation='softmax')(x)
-
-# this is the model we will train
-#model = Model(inputs=base_model.input, outputs=predictions)
-#model.compile(optimizer=RMSprop(lr=0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
-#model=load_model(final_model)
-
-#model=load_model("resnet50__ndvi_weights.09-0.93.hdf5")
-#model=load_model(final_model)
 
 # predict_class
 test_datagen = ImageDataGenerator()
