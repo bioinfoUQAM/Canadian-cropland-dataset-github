@@ -39,9 +39,6 @@ nb_train_samples=number_of_files(train_data_dir)
 nb_validation_samples=number_of_files(validation_data_dir)
 nb_test_samples=number_of_files(test_data_dir)
 
-#/content/drive/'My Drive'/
-#!unzip EuroSatRGB_very_small.zip
-
 # ==============================================================================
 # Etienne Lord, Amanda Boatswain Jacques - 2021
 #
@@ -132,9 +129,6 @@ model.summary()
 # RUN MODEL                                                                   #
 ################################################################################
 
-
-
-
 csv_logger = CSVLogger("resnetSCPSRI3_"+dataset+"_last_log.csv", append=True, separator=';')
 #checkpointer = ModelCheckpoint(filepath="resnet50_"+dataset+"_weights.{epoch:02d}-{val_accuracy:.2f}.h5", verbose=1, save_best_only=False)
 original_hist2=model.fit(
@@ -193,28 +187,6 @@ def number_of_files(dirname):
 ################################################################################
 #test_data_dir="EuroSatRGBmini"
 nb_test_samples=number_of_files(test_data_dir)
-
-################################################################################ 
-# DÉFINITION DU MODEL                                                          #
-################################################################################
-
-#base_model = ResNet50(weights='imagenet', include_top=False)
-
-#x = base_model.output
-#x = GlobalAveragePooling2D()(x)
-# let's add a fully-connected layer
-#x = Dense(1024, activation='relu')(x)
-#x = Dropout(0.25)(x)
-# and a logistic layer -- let's say we have 200 classes
-#predictions = Dense(number_of_classes, activation='softmax')(x)
-
-# this is the model we will train
-#model = Model(inputs=base_model.input, outputs=predictions)
-#model.compile(optimizer=RMSprop(lr=0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
-#model=load_model(final_model)
-
-#model=load_model("resnet50__ndvi_weights.09-0.93.hdf5")
-#model=load_model(final_model)
 
 # predict_class
 test_datagen = ImageDataGenerator()
