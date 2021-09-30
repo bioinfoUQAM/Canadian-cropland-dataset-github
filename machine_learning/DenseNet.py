@@ -14,9 +14,9 @@ from datetime import datetime
 dataset="RGB"  #Name the dataset here 
 timestamp = datetime.now().strftime("%d%b%Y%Hh%Mm%S")
 
-dataset_zip=dataset+".zip"
-past_model="DenseNet_" + dataset + "_" + timestamp + "_*.hdf5"
-final_model="DenseNet_"+ dataset + "_" + timestamp + "_final.h5"
+dataset_zip = dataset+".zip"
+past_model = "DenseNet_" + dataset + "_" + timestamp + "_*.hdf5"
+final_model = "DenseNet_"+ dataset + "_" + timestamp + "_final.h5"
 
 number_of_classes=10 
 img_width, img_height = 64, 64  
@@ -43,9 +43,6 @@ nb_train_samples=number_of_files(train_data_dir)
 nb_validation_samples=number_of_files(validation_data_dir)
 nb_test_samples=number_of_files(test_data_dir)
 
-#/content/drive/'My Drive'/
-#!unzip EuroSatRGB_very_small.zip
-
 # ==============================================================================
 # Etienne Lord, Amanda Boatswain Jacques - 2021
 #
@@ -61,7 +58,6 @@ nb_test_samples=number_of_files(test_data_dir)
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-# %tensorflow_version 1.x\
 
 from tensorflow.keras.applications import DenseNet121
 from tensorflow.keras.preprocessing import image
@@ -107,7 +103,7 @@ model.summary()
 
 
 # Compile the model (should be done *after* setting layers to non-trainable)
-model.compile(optimizer=Adam(learning_rate=1e-4), loss='categorical_crossentropy', metrics=['accuracy'])
+model.compile(optimizer=Adam(learning_rate=1e-2), loss='categorical_crossentropy', metrics=['accuracy'])
 
 ################################################################################ 
 # IMAGES LOADING                                                               #
@@ -284,9 +280,11 @@ print(test_generator.class_indices)
 
 target_names=test_generator.class_indices.keys()
 evalu = model.evaluate_generator(test_generator,steps = nb_samples // batch_size)       
+
 print("Total samples:"+str(nb_test_samples))
 print(model.metrics_names)
 print(evalu)
+
 test_generator.reset()
 predicted = model.predict_generator(test_generator,steps = nb_samples / batch_size, verbose=1)
 y_pred = np.rint(predicted)
@@ -298,6 +296,7 @@ labels = (test_generator.class_indices)
 labels = dict((v,k) for k,v in labels.items())
 predictions = [labels[k] for k in predicted_class_indices]
 #Where by class numbers will be replaced by the class names. One final step if you want to save it to a csv file, arrange it in a dataframe with the image names appended with the class predicted.
+
 print("=======================================================================")
 print("Confusion matrix test set")
 print(confusion_matrix(test_generator.classes, predicted_class_indices))
@@ -306,13 +305,17 @@ print("Report for test set")
 
 #For the EuroSat network only
 #target_names=['AnnualCrop','Forest','HerbaceousVegetation','Highway','Industrial','Pasture','PermanentCrop','Residential','River','SeaLake']
+
 print(classification_report(test_generator.classes, predicted_class_indices, target_names=target_names))
+
 #cm=confusion_matrix(test_generator.class_indices, y_pred)
 #print(classification_report(test_generator.class_indices, predicted_class_indices, target_names=labels))
+
 filenames=test_generator.filenames
 results=pd.DataFrame({"Filename":filenames,
                       "Predictions":predictions})
 filename="prediction_"+dataset+".csv"
 results.to_csv(filename)
 #!cp $filename /content/drive/'My Drive'/
+
 print(results)
