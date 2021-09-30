@@ -60,7 +60,7 @@ batch_size = 32
 input_shape = (65, 65, 3) # image shape 
 n_classes = len(labels)
 seq_len = 3
-epochs = 50
+epochs = 30
 
 # check the number of useable sets in each directory
 train_count = utils.get_valid_sequence_count(utils.create_image_sets(train_directory), seq_len)
