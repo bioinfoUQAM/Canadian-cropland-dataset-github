@@ -1,5 +1,7 @@
 # Usage python create_training.py --indir directory
 
+# @author: Amanda A. Boatswain Jacques
+
 # Divide directory into sample directory
 #import argparse
 import pickle
