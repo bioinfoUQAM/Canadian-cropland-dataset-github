@@ -1,4 +1,4 @@
-# Canadian-Cropland-Dataset
+# The Canadian Cropland Dataset
 This repository houses a novel patch-based dataset compiled using optical satellite images of Canadian agricultural croplands retrieved from Sentinel-2.
 
 ## 1 - Dataset Description
@@ -64,6 +64,6 @@ If you have used this dataset, please cite the following presentation:
 [1] Towards the Creation of a Canadian Land-Use Dataset for Agricultural Land Classification. Amanda A. Boatswain Jacques, Abdoulaye Baniré Diallo, Etienne Lord.  42nd Canadian Symposium on Remote Sensing: Understanding Our World: Remote Sensing for a Sustainable Future, June 2021. Virtual. 
 
 
-## 5- Contact
+## 5 - Contact
 For any questions or concerns regarding this repository, please contact boatswain_jacques.amanda@courrier.uqam.ca. 
 
