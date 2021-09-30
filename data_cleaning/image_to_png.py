@@ -2,7 +2,7 @@
 # conda install -c conda-forge rasterio
 # conda install -c anaconda pillow
 # conda
-# Etienne Lord, 29 Mars 2021
+# @author: Etienne Lord, 29 Mars 2021
 
 import sys
 from optparse import OptionParser
