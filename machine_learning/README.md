@@ -4,7 +4,7 @@ training, validation and testing directories.
 
 Ex: 
 
-# define the train, validation and test directories and get the image paths
+define the train, validation and test directories and get the image paths
 train_directory = "2019/RGB/training"
 val_directory = "2019/RGB/validation"
 test_directory = "2019/RGB/test"
@@ -19,8 +19,8 @@ Dynamic Image Classification
 
 3 Dimensional Convolutional Networks (3DCNN.py) 
 
-# Reference: *Uniformizing techniques to process CT scans with 3D CNNs for tuberculosis prediction.*
+Reference: *Uniformizing techniques to process CT scans with 3D CNNs for tuberculosis prediction.*
 Zunair, H., Rahman, A., Mohammed, N., & Cohen, J. P. (2020, October). Uniformizing techniques to process CT scans with 3D CNNs for tuberculosis prediction.
 In International Workshop on PRedictive Intelligence In MEdicine (pp. 156-168). Springer, Cham.
 
-# [https://arxiv.org/abs/2007.13224]
+[https://arxiv.org/abs/2007.13224]
