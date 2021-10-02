@@ -36,7 +36,7 @@ In International Workshop on PRedictive Intelligence In MEdicine (pp. 156-168). 
 
 [https://arxiv.org/abs/2007.13224]
 
-- Long-Term Recurrent Convolutional Network (LRCN)
+- Long-Term Recurrent Convolutional Networks (LRCN)
 
 Reference: *Long-term recurrent convolutional networks for visual recognition and description.*
 
@@ -61,3 +61,9 @@ Reference: *Densely connected convolutional networks*
 Gao Huang, Zhuang Liu, and Kilian Q. Weinberger. Densely connected convolutional networks. CoRR, abs/1608.06993, 2016.
 
 [https://arxiv.org/abs/1608.06993]
+
+- EfficientNet (B0)
+
+Reference: *Efficientnet: Rethinking model scaling for convolutional neural networks.*
+
+Mingxing Tan and Quoc V. Le. Efficientnet: Rethinking model scaling for convolutional neural networks.CoRR, abs/1905.11946, 2019.
