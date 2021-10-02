@@ -7,21 +7,19 @@ To train each network, create and activate a python environment with the require
 ``` python
 # create conda environment with dependencies, file is in ./scripts/conda
 conda env create --name envname python=3.8
-
 conda activate envname 
 
-python "model".py
+# Run the 3DCNN
+python 3DCNN.py
 ```
 
-Before training the networks, select the desired image set by changing the training, validation and testing directories:
+Before training the networks, modify the desired image set by changing the training, validation and testing directories:
 
 ``` python
-
-# define the train, validation and test directories and get the image paths
+# define the train, validation and test directories and get the image paths (in this case, we are using the RGB data)
 train_directory = "2019/RGB/training"
 val_directory = "2019/RGB/validation"
 test_directory = "2019/RGB/test"
-
 ```
 
 To train each network, simply activate a python environment with the required libraries and enter:
