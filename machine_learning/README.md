@@ -67,3 +67,5 @@ Gao Huang, Zhuang Liu, and Kilian Q. Weinberger. Densely connected convolutional
 Reference: *Efficientnet: Rethinking model scaling for convolutional neural networks.*
 
 Mingxing Tan and Quoc V. Le. Efficientnet: Rethinking model scaling for convolutional neural networks.CoRR, abs/1905.11946, 2019.
+
+[https://arxiv.org/abs/1905.11946]
