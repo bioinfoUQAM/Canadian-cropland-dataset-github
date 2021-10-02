@@ -46,7 +46,7 @@ J. Donahue, L. Hendricks, S. Guadarrama, M. Rohrbach, S. Venugopalan, T. Darrell
 
 ### Static Image Classification 
 
-- ResNet50 
+- ResNet
 
 Reference: *Deep residual learning for image recognition.* 
 
@@ -62,7 +62,7 @@ Gao Huang, Zhuang Liu, and Kilian Q. Weinberger. Densely connected convolutional
 
 [https://arxiv.org/abs/1608.06993]
 
-- EfficientNet (B0)
+- EfficientNet
 
 Reference: *Efficientnet: Rethinking model scaling for convolutional neural networks.*
 
