@@ -1,17 +1,30 @@
 # Machine Learning
-This sub-repository contains instructions for running the machine learning experiments. Model architectures are contained in the "models" folder. Before training the networks, select the desired image set by changing the 
-training, validation and testing directories. 
 
-Ex: 
+This sub-repository contains instructions for running the machine learning experiments. Model architectures are contained in the "models" folder.
 
-define the train, validation and test directories and get the image paths
+To train each network, create and activate a python environment with the required libraries and enter:
+
+``` python
+# create conda environment with dependencies, file is in ./scripts/conda
+conda env create --name envname python=3.8
+
+conda activate envname 
+
+python "model".py
+```
+
+Before training the networks, select the desired image set by changing the training, validation and testing directories:
+
+``` python
+
+# define the train, validation and test directories and get the image paths
 train_directory = "2019/RGB/training"
 val_directory = "2019/RGB/validation"
 test_directory = "2019/RGB/test"
 
-To train each network, simply activate a python environment with the required libraries and enter:
+```
 
-python "model".py
+To train each network, simply activate a python environment with the required libraries and enter:
 
 Models 
 
