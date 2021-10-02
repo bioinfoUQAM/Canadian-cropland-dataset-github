@@ -8,7 +8,7 @@ To train each network, create and activate a python environment with the require
 conda env create --name envname python=3.8
 conda activate envname 
 ```
-Then, cd to the directory containing the model and run: 
+Then, cd to the directory containing the desired model and run: 
 
 ```
 python 3DCNN.py
@@ -23,15 +23,21 @@ val_directory = "2019/RGB/validation"
 test_directory = "2019/RGB/test"
 ```
 
-
 ## Models 
 
 ### Dynamic Image Classification 
 
-3 Dimensional Convolutional Networks (3DCNN.py) 
+1. 3 Dimensional Convolutional Networks (3DCNN.py) 
 
 Reference: *Uniformizing techniques to process CT scans with 3D CNNs for tuberculosis prediction.*
 Zunair, H., Rahman, A., Mohammed, N., & Cohen, J. P. (2020, October). Uniformizing techniques to process CT scans with 3D CNNs for tuberculosis prediction.
 In International Workshop on PRedictive Intelligence In MEdicine (pp. 156-168). Springer, Cham.
 
 [https://arxiv.org/abs/2007.13224]
+
+2. Long-Term Recurrent Convolutional Network (LRCN)
+
+Reference: *Long-term recurrent convolutional networks for visual recognition and description.*
+J. Donahue, L. Hendricks, S. Guadarrama, M. Rohrbach, S. Venugopalan, T. Darrell, and K. Saenko. CVPR , page 2625-2634. IEEE Computer Society, (2015)
+
+[https://arxiv.org/pdf/1411.4389v3.pdf]
