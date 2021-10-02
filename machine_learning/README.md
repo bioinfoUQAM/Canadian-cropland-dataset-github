@@ -52,8 +52,12 @@ Reference: *Deep residual learning for image recognition.*
 
 Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Deep residual learning for image recognition. In IEEE Conference on Computer Vision and Pattern Recognition, pages 770–778, 12 2016.
 
+[https://arxiv.org/abs/1512.03385]
+
 - DenseNet 
 
 Reference: *Densely connected convolutional networks* 
 
 Gao Huang, Zhuang Liu, and Kilian Q. Weinberger. Densely connected convolutional networks. CoRR, abs/1608.06993, 2016.
+
+[https://arxiv.org/abs/1608.06993]
