@@ -27,7 +27,7 @@ test_directory = "2019/RGB/test"
 
 ### Dynamic Image Classification 
 
-1. 3 Dimensional Convolutional Networks (3DCNN.py) 
+- 3 Dimensional Convolutional Networks (3DCNN.py) 
 
 Reference: *Uniformizing techniques to process CT scans with 3D CNNs for tuberculosis prediction.*
 Zunair, H., Rahman, A., Mohammed, N., & Cohen, J. P. (2020, October). Uniformizing techniques to process CT scans with 3D CNNs for tuberculosis prediction.
@@ -35,9 +35,21 @@ In International Workshop on PRedictive Intelligence In MEdicine (pp. 156-168). 
 
 [https://arxiv.org/abs/2007.13224]
 
-2. Long-Term Recurrent Convolutional Network (LRCN)
+- Long-Term Recurrent Convolutional Network (LRCN)
 
 Reference: *Long-term recurrent convolutional networks for visual recognition and description.*
 J. Donahue, L. Hendricks, S. Guadarrama, M. Rohrbach, S. Venugopalan, T. Darrell, and K. Saenko. CVPR , page 2625-2634. IEEE Computer Society, (2015)
 
 [https://arxiv.org/pdf/1411.4389v3.pdf]
+
+### Static Image Classification 
+
+- ResNet50 
+
+Reference: *Deep residual learning for image recognition.*
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Deep residual learning for image recognition. In IEEE Conference on Computer Vision and Pattern Recognition, pages 770–778, 12 2016.
+
+- DenseNet 
+-
+Reference: * DDensely connected convolutional networks* 
+Gao Huang, Zhuang Liu, and Kilian Q. Weinberger. Densely connected convolutional networks. CoRR, abs/1608.06993, 2016.
