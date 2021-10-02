@@ -4,12 +4,13 @@ This sub-repository contains instructions for running the machine learning exper
 
 To train each network, create and activate a python environment with the required libraries and enter:
 
-``` python
-# create conda environment with dependencies, file is in ./scripts/conda
+``` 
+# create conda environment with dependencies
 conda env create --name envname python=3.8
 conda activate envname 
+```
 
-# Run the 3DCNN
+```
 python 3DCNN.py
 ```
 
