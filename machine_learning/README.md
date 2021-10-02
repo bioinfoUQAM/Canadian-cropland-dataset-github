@@ -51,5 +51,5 @@ Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Deep residual learning fo
 
 - DenseNet 
 
-Reference: * DDensely connected convolutional networks* 
+Reference: *Densely connected convolutional networks* 
 Gao Huang, Zhuang Liu, and Kilian Q. Weinberger. Densely connected convolutional networks. CoRR, abs/1608.06993, 2016.
