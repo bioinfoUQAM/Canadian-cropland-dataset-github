@@ -27,7 +27,7 @@ test_directory = "2019/RGB/test"
 
 Trained models (RGB data) using the 3DCNN and LRCN networks can be downloaded via a [Google Drive link](https://drive.google.com/drive/folders/13jSJHLDXcNtKfyvDgjQLoJ2p7sSGmlqE?usp=sharing).
 
-### Dynamic Image Classification 
+### Dynamic Image Classification (crop classification using sequences of 3 images)
 
 - 3 Dimensional Convolutional Networks (3DCNN.py) 
 
@@ -46,7 +46,7 @@ J. Donahue, L. Hendricks, S. Guadarrama, M. Rohrbach, S. Venugopalan, T. Darrell
 
 [https://arxiv.org/pdf/1411.4389v3.pdf]
 
-### Static Image Classification 
+### Static Image Classification (crop classification using a single image)
 
 - ResNet
 
