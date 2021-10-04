@@ -25,6 +25,8 @@ test_directory = "2019/RGB/test"
 
 ## Models 
 
+Trained models (RGB data) using the 3DCNN and LRCN networks can be downloaded via a (Google Drive link)[https://drive.google.com/drive/folders/13jSJHLDXcNtKfyvDgjQLoJ2p7sSGmlqE?usp=sharing].
+
 ### Dynamic Image Classification 
 
 - 3 Dimensional Convolutional Networks (3DCNN.py) 
