@@ -51,7 +51,7 @@ Contains spreadsheets and figures depicting the distribution of the images withi
 ### Earth Engine
 Contains the [JavaScript code](https://github.com/bioinfoUQAM/Canadian-cropland-dataset/blob/main/EarthEngine/AAFC_GEE_points.js "JavaScript code") used to collect points of agricultural fields all accross Canada from the months of June 2016 to October 2019 (Figure 2). The code can be visualized directly in GEE using this [link](https://code.earthengine.google.com/?scriptPath=users%2Famandaboatswainj%2FAAFC-cropland-database%3AAAFC_GEE_dataset_points "link"). Note that you must be registered with an activated GEE account to view the script and run it on the cloud.
  
-![geographical points](https://github.com/bioinfoUQAM/Canadian-cropland-dataset/blob/main/figures/ACI_crop_inventory_2019.png)
+![geographical points](https://github.com/bioinfoUQAM/Canadian-cropland-dataset/blob/main/figures/ACI_point_map_2019.png)
 
 Figure 3: Map representing an overview of the selected geographical locations used in the _Canadian Cropland Dataset_. Markers are randomly chosen fields and are color-coded by the 2019 crop types.
 
