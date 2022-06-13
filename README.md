@@ -6,7 +6,7 @@ This repository contains instructions and code for use with the novel patch-base
 
 The dataset can be accessed through this [Google Drive](https://drive.google.com/drive/folders/1mNI8B5EMk0Xgvx2Pc9ztnQRaW9pXh8yb?usp=sharing "Link to dataset") link. In the upcoming months, we will be hosting it on a website at Université du Québec à Montreal. The Drive contains the preprocessed and cleaned images from all years in train/validation/test splits. Each split is identical and contains the same points across the year and image type (RGB, GNDVI, etc.). 
 
-![dataset overview](https://github.com/bioinfoUQAM/Canadian-cropland-dataset/blob/main/figures/crop_mosaic_2019.png)
+![dataset overview](https://github.com/bioinfoUQAM/Canadian-cropland-dataset/blob/main/figures/crop_mosaic_2019_ver2.png)
 
 Figure 1: An overview of sample patches of the crop classes in the dataset. The images measure 64 x 64 pixels and have a spatial resolution of 10 m/pixel. 
 
