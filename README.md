@@ -8,7 +8,7 @@ The dataset can be accessed through this [Google Drive](https://drive.google.com
 
 ![dataset overview](https://github.com/bioinfoUQAM/Canadian-cropland-dataset/blob/main/figures/crop_mosaic_2019.png)
 
-Figure 1: An overview of sample patches of some of the crop classes in the proposed dataset. The images measure 64 x 64 pixels and have a spatial resolution of 10 m/pixel. 
+Figure 1: An overview of sample patches of the crop classes in the dataset. The images measure 64 x 64 pixels and have a spatial resolution of 10 m/pixel. 
 
 ## 2 - Running the Software
 
