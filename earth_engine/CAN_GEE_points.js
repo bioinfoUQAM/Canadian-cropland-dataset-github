@@ -7,6 +7,7 @@ var crop2019 = ACI.filter(ee.Filter.date('2019-01-01', '2019-12-31')).first()
 print(crop2019);
 print(ACI);
 Map.addLayer(crop2019, { }, "Complete Annual Crop Inventory");
+var table = ee.FeatureCollection("USDOS/LSIB_SIMPLE/2017"); 
 
 // Get some basic info from the Crop Inventory 
 
