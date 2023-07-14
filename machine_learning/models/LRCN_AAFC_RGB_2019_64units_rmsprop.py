@@ -24,7 +24,7 @@ from keras.callbacks import *
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import classification_report
 import keras.callbacks
-import AAFC_utils as utils 
+import utils as utils 
 import os, random
 
 
