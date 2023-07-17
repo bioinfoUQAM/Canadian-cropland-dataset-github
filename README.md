@@ -60,9 +60,23 @@ Figure 3: Map representing an overview of the selected geographical locations us
 Contains python code for the deep learning benchmark models (ResNet-50, LRCN, 3D-CNN, etc).
 
 ## 4 - References
-If you have used this dataset, please cite the following presentation:
+If you have used this dataset, please consider citing our paper:
 
-[1] Towards the Creation of a Canadian Land-Use Dataset for Agricultural Land Classification. Amanda A. Boatswain Jacques, Abdoulaye Baniré Diallo, Etienne Lord.  42nd Canadian Symposium on Remote Sensing: Understanding Our World: Remote Sensing for a Sustainable Future, June 2021. Virtual. 
+**APA Style**
+
+Boatswain Jacques, A. A., Diallo, A. B., & Lord, E. (2023). *The Canadian Cropland Dataset: A New Land Cover Dataset for Multitemporal Deep Learning Classification in Agriculture*. arXiv [Cs.CV]. Retrieved from http://arxiv.org/abs/2306.00114
+
+**Bibtex**
+
+```
+@misc{boatswainjacques2023canadian,
+      title={The Canadian Cropland Dataset: A New Land Cover Dataset for Multitemporal Deep Learning Classification in Agriculture}, 
+      author={Amanda A. {Boatswain Jacques} and {Abdoulaye Baniré} Diallo and Etienne Lord},
+      year={2023},
+      eprint={2306.00114},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}}
+```
 
 
 ## 5 - Contact
